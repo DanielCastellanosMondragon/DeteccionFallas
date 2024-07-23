@@ -6,11 +6,15 @@
  */
 
 #include "unity.h"
-#include "testBotones.h"
+#include "appMain.h"
 
+void testPass(void)
+{
+	TEST_ASSERT_TRUE(appReturnTrue());
+}
 int main(void)
 {
     UNITY_BEGIN();
-    botonesMain();
+    RUN_TEST(testPass);
     return UNITY_END();
 }
