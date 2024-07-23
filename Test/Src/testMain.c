@@ -10,7 +10,7 @@
 
 void testPass(void)
 {
-	TEST_ASSERT_TRUE(appReturnTrue());
+    TEST_ASSERT_TRUE(appReturnTrue());
 }
 int main(void)
 {

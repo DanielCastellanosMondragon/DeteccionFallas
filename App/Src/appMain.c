@@ -11,6 +11,7 @@ void appLoop(void)
 {
 	while(1)
 	{
+
 	}
 }
 uint8_t appReturnTrue(void)
