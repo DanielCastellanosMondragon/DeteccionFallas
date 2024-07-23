@@ -10,11 +10,12 @@
 
 void testPass(void)
 {
-	TEST_ASSERT_TRUE(returnTrue());
+    TEST_ASSERT_TRUE(returnTrue());
 }
 
-int main(void) {
+int main(void)
+{
     UNITY_BEGIN();
-	RUN_TEST(testPass);
+    RUN_TEST(testPass);
     return UNITY_END();
 }
