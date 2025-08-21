@@ -28,6 +28,8 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "Mock_stm32f4xx_hal.h"
+#include "Mock_stm32f4xx_hal_adc.h"
+#include "Mock_stm32f4xx_hal_tim.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -57,31 +59,35 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define B1_Pin             GPIO_PIN_13
-#define B1_GPIO_Port       &GPIOC
-#define USART_TX_Pin       GPIO_PIN_2
-#define USART_TX_GPIO_Port &GPIOA
-#define USART_RX_Pin       GPIO_PIN_3
-#define USART_RX_GPIO_Port &GPIOA
-#define LD2_Pin            GPIO_PIN_5
-#define LD2_GPIO_Port      &GPIOA
-#define Button2_Pin        GPIO_PIN_10
-#define Button2_GPIO_Port  &GPIOB
-#define Sensor_Pin         GPIO_PIN_8
-#define Sensor_GPIO_Port   &GPIOA
-#define TMS_Pin            GPIO_PIN_13
-#define TMS_GPIO_Port      &GPIOA
-#define TCK_Pin            GPIO_PIN_14
-#define TCK_GPIO_Port      &GPIOA
-#define SWO_Pin            GPIO_PIN_3
-#define SWO_GPIO_Port      &GPIOB
-#define Button1_Pin        GPIO_PIN_4
-#define Button1_GPIO_Port  &GPIOB
-#define Button0_Pin        GPIO_PIN_5
-#define Button0_GPIO_Port  &GPIOB
+#define B1_Pin GPIO_PIN_13
+#define B1_GPIO_Port (&GPIOC)
+#define Sensor_Pin GPIO_PIN_0
+#define Sensor_GPIO_Port (&GPIOA)
+#define Servo_Pin GPIO_PIN_1
+#define Servo_GPIO_Port (&GPIOA)
+#define USART_TX_Pin GPIO_PIN_2
+#define USART_TX_GPIO_Port (&GPIOA)
+#define USART_RX_Pin GPIO_PIN_3
+#define USART_RX_GPIO_Port (&GPIOA)
+#define LG_Pin GPIO_PIN_5
+#define LG_GPIO_Port (&GPIOA)
+#define LB_Pin GPIO_PIN_10
+#define LB_GPIO_Port (&GPIOB)
+#define LR_Pin GPIO_PIN_10
+#define LR_GPIO_Port (&GPIOA)
+#define TMS_Pin GPIO_PIN_13
+#define TMS_GPIO_Port (&GPIOA)
+#define TCK_Pin GPIO_PIN_14
+#define TCK_GPIO_Port (&GPIOA)
+#define SWO_Pin GPIO_PIN_3
+#define SWO_GPIO_Port (&GPIOB)
+#define B0_Pin GPIO_PIN_4
+#define B0_GPIO_Port (&GPIOB)
+#define B2_Pin GPIO_PIN_5
+#define B2_GPIO_Port (&GPIOB)
 
 /* USER CODE BEGIN Private defines */
-
+void HAL_GPIO_WritePinStub(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState, int cmock_num_calls);
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

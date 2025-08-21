@@ -16,3 +16,6 @@ GPIO_TypeDef GPIOE;
 GPIO_TypeDef GPIOF;
 GPIO_TypeDef GPIOG;
 GPIO_TypeDef GPIOH;
+void HAL_Delay(uint32_t Delay)
+{
+}

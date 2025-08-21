@@ -11,4 +11,7 @@
 
 void appLoop(void);
 uint8_t appReturnTrue(void);
+
+#ifdef TEST
+#endif
 #endif /* INC_APPMAIN_H_ */

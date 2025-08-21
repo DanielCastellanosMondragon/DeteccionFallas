@@ -10,6 +10,8 @@
 
 #include "Mock_stm32f4xx.h"
 
+#define HAL_MAX_DELAY      0xFFFFFFFFU
+
 typedef enum
 {
   HAL_OK       = 0x00U,
@@ -17,5 +19,11 @@ typedef enum
   HAL_BUSY     = 0x02U,
   HAL_TIMEOUT  = 0x03U
 } HAL_StatusTypeDef;
+
+typedef enum
+{
+  HAL_UNLOCKED = 0x00U,
+  HAL_LOCKED   = 0x01U
+} HAL_LockTypeDef;
 
 #endif /* MOCKS_MOCK_STM32F4XX_HAL_DEF_H_ */

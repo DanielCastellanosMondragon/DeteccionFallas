@@ -7,6 +7,8 @@
 
 #include "appMain.h"
 
+#ifdef TEST
+#endif
 void appLoop(void)
 {
 	while(1)

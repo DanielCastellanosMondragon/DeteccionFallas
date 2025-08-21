@@ -27,5 +27,38 @@ typedef struct
   __IO uint32_t AFR[2];   /*!< GPIO alternate function registers,     Address offset: 0x20-0x24 */
 } GPIO_TypeDef;
 
+typedef struct
+{
+  __IO uint32_t SR;     /*!< ADC status register,                         Address offset: 0x00 */
+  __IO uint32_t CR1;    /*!< ADC control register 1,                      Address offset: 0x04 */
+  __IO uint32_t CR2;    /*!< ADC control register 2,                      Address offset: 0x08 */
+  __IO uint32_t SMPR1;  /*!< ADC sample time register 1,                  Address offset: 0x0C */
+  __IO uint32_t SMPR2;  /*!< ADC sample time register 2,                  Address offset: 0x10 */
+  __IO uint32_t JOFR1;  /*!< ADC injected channel data offset register 1, Address offset: 0x14 */
+  __IO uint32_t JOFR2;  /*!< ADC injected channel data offset register 2, Address offset: 0x18 */
+  __IO uint32_t JOFR3;  /*!< ADC injected channel data offset register 3, Address offset: 0x1C */
+  __IO uint32_t JOFR4;  /*!< ADC injected channel data offset register 4, Address offset: 0x20 */
+  __IO uint32_t HTR;    /*!< ADC watchdog higher threshold register,      Address offset: 0x24 */
+  __IO uint32_t LTR;    /*!< ADC watchdog lower threshold register,       Address offset: 0x28 */
+  __IO uint32_t SQR1;   /*!< ADC regular sequence register 1,             Address offset: 0x2C */
+  __IO uint32_t SQR2;   /*!< ADC regular sequence register 2,             Address offset: 0x30 */
+  __IO uint32_t SQR3;   /*!< ADC regular sequence register 3,             Address offset: 0x34 */
+  __IO uint32_t JSQR;   /*!< ADC injected sequence register,              Address offset: 0x38*/
+  __IO uint32_t JDR1;   /*!< ADC injected data register 1,                Address offset: 0x3C */
+  __IO uint32_t JDR2;   /*!< ADC injected data register 2,                Address offset: 0x40 */
+  __IO uint32_t JDR3;   /*!< ADC injected data register 3,                Address offset: 0x44 */
+  __IO uint32_t JDR4;   /*!< ADC injected data register 4,                Address offset: 0x48 */
+  __IO uint32_t DR;     /*!< ADC regular data register,                   Address offset: 0x4C */
+} ADC_TypeDef;
+
+typedef struct
+{
+  __IO uint32_t CR;     /*!< DMA stream x configuration register      */
+  __IO uint32_t NDTR;   /*!< DMA stream x number of data register     */
+  __IO uint32_t PAR;    /*!< DMA stream x peripheral address register */
+  __IO uint32_t M0AR;   /*!< DMA stream x memory 0 address register   */
+  __IO uint32_t M1AR;   /*!< DMA stream x memory 1 address register   */
+  __IO uint32_t FCR;    /*!< DMA stream x FIFO control register       */
+} DMA_Stream_TypeDef;
 
 #endif /* MOCKS_MOCK_STM32F446XX_H_ */

@@ -50,8 +50,6 @@ int suiteTearDown(int num_failures);
  * the test runner generator will create them. resetTest will run teardown and
  * setup again, verifying any end-of-test needs between. verifyTest will only
  * run the verification. */
-void resetTest(void);
-void verifyTest(void);
 
 /*-------------------------------------------------------
  * Configuration Options

@@ -11,6 +11,8 @@
 #include "Mockstm32f4xx_hal_rcc.h"
 */
 #include "Mock_stm32f4xx_hal_gpio.h"
+#include "Mock_stm32f4xx_hal_adc.h"
+#include "Mock_stm32f4xx_hal_dma.h"
 /*
 #include "Mockstm32f4xx_hal_exti.h"
 #include "Mockstm32f4xx_hal_dma.h"

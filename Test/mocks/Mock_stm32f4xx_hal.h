@@ -42,6 +42,6 @@ extern GPIO_TypeDef GPIOH;
 #define GPIO_PIN_15                ((uint16_t)0x8000)  /* Pin 15 selected   */
 #define GPIO_PIN_All               ((uint16_t)0xFFFF)  /* All pins selected */
 
-
+void HAL_Delay(uint32_t Delay);
 
 #endif /* MOCKS_MOCK_STM32F4XX_HAL_H_ */
