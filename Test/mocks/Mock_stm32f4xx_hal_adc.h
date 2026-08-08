@@ -2,7 +2,7 @@
 #ifndef _MOCK_STM32F4XX_HAL_ADC_H
 #define _MOCK_STM32F4XX_HAL_ADC_H
 
-#include "unity.h"
+#include "../../unity/src/unity.h"
 #include "Mock_stm32f4xx_hal_dma.h"
 
 typedef struct

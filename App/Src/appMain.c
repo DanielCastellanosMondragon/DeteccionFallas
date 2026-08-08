@@ -5,7 +5,7 @@
  *      Author: danie
  */
 
-#include "appMain.h"
+#include "../Inc/appMain.h"
 
 #ifdef TEST
 #endif

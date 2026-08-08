@@ -5,9 +5,9 @@
  *      Author: Daniel Castellanos
  */
 
-#include "unity.h"
-#include "appMain.h"
-#include "testMain.h"
+#include "../../unity/src/unity.h"
+#include "../../App/Inc/appMain.h"
+#include "../../Test/Inc/testMain.h"
 
 int GlobalExpectCount;
 int GlobalVerifyOrder;

@@ -9,7 +9,7 @@
 #define MOCKS_MOCK_STM32F4XX_HAL_DMA_H_
 
 #include "Mock_stm32f4xx_hal_def.h"
-#include "unity.h"
+#include "../../unity/src/unity.h"
 
 /**
   * @brief  HAL DMA State structures definition

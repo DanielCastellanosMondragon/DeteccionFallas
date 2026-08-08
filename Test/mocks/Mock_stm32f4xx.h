@@ -1,7 +1,7 @@
 #ifndef _MOCK_STM32F4XX_H
 #define _MOCK_STM32F4XX_H
 
-#include "unity.h"
+#include "../../unity/src/unity.h"
 
 #if defined(STM32F411xE)
 #include "Mock_stm32f411xe.h"
